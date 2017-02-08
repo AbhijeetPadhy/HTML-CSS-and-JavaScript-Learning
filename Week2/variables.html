@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Variables!!</title>
+		<script type="text/javascript">
+			//number
+			var num1 = 34.289;
+			var num2 = 100;
+
+			//sci notation
+			var big_num = 123e5;
+			var small_num = 123e-5;
+
+			//string
+			var name = "David";
+			var title = 'Proff';
+			var msg = "It's alright";
+
+			//Boolean
+			var cond1 = true;
+			var cond2 = false;
+
+			//Do not confuse Boolean values ith String values
+			var myBool = true; //Boolean type
+			var myString = "true"; //String type
+
+			//A variable type can change
+			var storage = "David";
+			storage = 98; // The type of the variable is changed immediately
+
+			//using typeof
+			alert(
+				'"John" is type: ' + typeof "John" + "\n\n"
+				+ "3.14 is type: " + typeof 3.14 + "\n\n"
+				+ "false is type: " + typeof false
+			);
+
+			//common changes
+			var count = 10;
+			count++;
+			count--;
+			count += 10;
+			var str = "wow";
+			str += "!";
+			count -= 10;
+			count *= 5;
+			count /= 2;
+
+			//from one type to another
+				//parseInt()
+				//parseFloat()
+				//String()
+			document.write(parseInt(3.14) + "<br>");
+			document.write(parseInt("3.14") + "<br>");
+			document.write(parseFloat("3.14") + "<br>");
+			document.write(String(3.14) + "<br>");
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
