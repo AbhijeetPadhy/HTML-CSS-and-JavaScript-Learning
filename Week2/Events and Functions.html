@@ -4,14 +4,14 @@
 		<meta charset="utf-8">
 		<title>Events and Functions</title>
 		<script type="text/javascript">
-			function greet_the_user(){
-				alert('Hello!');
+			function greet_the_user(name){
+				alert('Hello!' + name);
 				alert('We start soon...');
 				prompt('Excited?!');
 			}
 		</script>
 	</head>
-	<body onload="greet_the_user()">
+	<body onload="greet_the_user('Paddy')">
 		<p>
 			3 popup windows are shown as soon as the page is loaded.
 		</p>
