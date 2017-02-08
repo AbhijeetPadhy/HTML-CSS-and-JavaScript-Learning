@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>This is my naughty home page.</title>
+		<script type="text/javascript">
+			function check_user_age(){
+				if(age_of_user()<18)
+					alert("Please go to another page.");
+			}
+			function age_of_user(){
+				var age_text, age;
+				age_text = prompt("What is your age?");
+				age = parseInt(age_text);
+				return age;
+			}
+		</script>
+	</head>
+	<body onload="check_user_age()">
+		<h1>This is my naughty home page.</h1>
+	</body>
+</html>
