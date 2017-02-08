@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>More on Variables!!</title>
+		<script type="text/javascript">
+			function show_money(){
+				var money = 2;
+				//defining an undeclared variable in a function makes it global
+				global = 60;
+				alert("In the function the value of money is " + money +" and sunny is " + sunny);
+			}
+			var money = 100;
+			var sunny = 90;
+			alert("In the function the value of money is " + money +" and sunny is " + sunny);
+			show_money();
+			alert("In the function the value of money is " + money +" and sunny is " + sunny);
+			alert("The global var is actually global " + global);
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
