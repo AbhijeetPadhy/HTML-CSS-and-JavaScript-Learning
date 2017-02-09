@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Logical Operator</title>
+		<script type="text/javascript">
+			var you_are_rich = false;
+			var you_have_partner = true;
+			var you_have_flat = true;
+			var life_is_fantastic = you_are_rich && you_have_partner && you_have_flat;
+
+			alert("Life is fantastic is " + life_is_fantastic);
+			you_are_rich = true;
+			life_is_fantastic = you_are_rich && you_have_partner && you_have_flat;
+			alert("Life is fantastic is now " + life_is_fantastic);
+			function first_function(){
+				alert("First function");
+				return false;
+			}
+			function second_function(){
+				alert("Second function");
+				return true;
+			}
+
+			var test_function = first_function() && second_function();
+			//the second function doesnot get exceuted since first is false
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
