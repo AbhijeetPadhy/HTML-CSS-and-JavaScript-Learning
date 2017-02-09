@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Arrays</title>
+		<script type="text/javascript">
+			var pets = ["Dog", "Cat", "Rabbit"];
+
+			console.log(pets[2]);
+			console.log(pets.join(" and "));
+			console.log(pets.join());
+			console.log(pets.length);
+
+			//add at the end
+			pets.push("Hamster");
+			console.log(pets);
+
+			//add to first
+			pets.unshift("Hamster");
+			console.log(pets);
+
+			//delete the last item
+			var result = pets.pop();
+			console.log("The element popped is " + result + " and the remaining array is " + pets);
+
+			//delete the first item
+			result = pets.shift();
+			console.log("The element popped is " + result + " and the remaining array is " + pets);
+
+			//combining arrays
+			var primes = [2, 3, 5, 7];
+			result = pets.concat(primes);
+			console.log(result);
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
