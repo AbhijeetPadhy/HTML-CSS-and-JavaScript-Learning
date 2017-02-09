@@ -2,30 +2,12 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Number guessing game!!</title>
-		<script type="text/javascript">
-			var target = Math.floor(Math.random() * 100) + 1;
-			var flag = false;
-			var count = 0;
-			do{
-				++count;
-				var guess_input = prompt("I am thinking of a number in the range 1 to 100.\nWhat is the number?");
-				if(isNaN(guess_input))
-					alert("Enter a number!");
-				else if(guess_input < 1 && guess_input > 100)
-					alert("Wrong range!");
-				else if(guess_input > target)
-					alert("Too high!");
-				else if(guess_input < target)
-					alert("Too low!");
-				else{
-					alert("You got it!\nIt took you " + count + " guesses to find the right one!");
-					flag = true;
-				}
-			}while(!flag);
+		<title>Javascript guessing game</title>
+		<script type="text/javascript" src = "js_guessing_game.js">
+
 		</script>
 	</head>
-	<body>
+	<body onload = "do_game();">
 
 	</body>
 </html>
