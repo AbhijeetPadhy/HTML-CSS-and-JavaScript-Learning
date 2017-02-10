@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>More on Arrays!</title>
+		<script type="text/javascript">
+			var pets = ["Dog", "Cats", "Rabbit", "Hamster", "Rabbit", "Rabbit", "Dog", "Cat", "Hamster", "Hamster","Rabbit"];
+			var rabbitPositions = [], startSearchAt = 0;
+			do{
+				foundAt = pets.indexOf("Rabbit", startSearchAt);
+				if(foundAt != -1){
+					rabbitPositions.push(foundAt);
+					startSearchAt = foundAt + 1;
+				}
+			}while(foundAt != -1)
+			alert(rabbitPositions);
+			//pets.sort();
+			//pets.reverse();
+			//pets.indexOf("Rabbit");
+			//pets.indexOf(target,startSearchAt);
+			//pets.lastIndexOf("Rabbit");
+			//pets.slice(startPosition)
+			//pets.slice(startPosition,endPosition)
+			//pets.splice(position,quantity);
+			//array.splice(position,0,element) for insertion
+
+			pets = ["Dog", "Cats", "Rabbit", "Hamster"];
+			var result = pets.slice(1);
+			//result is ["Cats", "Rabbit", "Hamster"]
+
+			result = pets.slice(1,3)
+			//result is ["Cats", "Rabbit"]
+
+			var pets = ["Dog", "Cats", "Rabbit", "Hamster"];
+			var result = pets.splice(1,1);
+			//Now pets is ["Dog", "Rabbit", "Hamster"]
+			//and result is ["Cat"]
+
+			var pets = ["Dog", "Cats", "Hamster"];
+			var result = pets.splice(2,0,"Rabbit");
+			//Now pets is ["Dog", "Cat", "Rabbit", "Hamster"]
+			//and result is []
+
+			var pets = ["Dog", "Cats", "Hamster"];
+			var result = pets.splice(1,1,"Rabbit","Fish");
+			//Now pets is ["Dog", "Rabbit", "Fish", "Hamster"]
+			//and result is ["Cat"]
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
