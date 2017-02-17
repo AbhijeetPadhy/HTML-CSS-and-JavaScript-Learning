@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Create and Add Nodes</title>
+		<script type="text/javascript">
+			function insert_new_text(){
+				var newItem = document.createTextNode("This is dynamically added text!");
+				var destParent = document.getElementById("my_text");
+				destParent.appendChild(newItem);
+			}
+		</script>
+	</head>
+	<body onclick="insert_new_text()">
+		<h1 id="my_text">Click on the page!</h1>
+	</body>
+</html>
