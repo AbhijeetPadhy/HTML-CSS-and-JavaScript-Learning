@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Break Loop Control</title>
+		<script type="text/javascript">
+			var total_amount = 0;
+			while(true){
+				this_amount = prompt("How much in this account?");
+				this_amount = parseFloat(this_amount);
+				if(this_amount > 0)
+					total_amount += this_amount;
+				else
+					break;
+			}
+			alert("Your total savings: " + total_amount);
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
