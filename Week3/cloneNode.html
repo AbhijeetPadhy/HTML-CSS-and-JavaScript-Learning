@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Clone Node!</title>
+		<script type="text/javascript">
+			function myFunction1(){
+				var the_node = document.getElementById("myList").firstChild;
+				var the_clone = the_node.cloneNode();
+				document.getElementById("myList").appendChild(the_clone);
+			}
+			function myFunction2(){
+				var the_node = document.getElementById("myList").firstChild;
+				var the_clone = the_node.cloneNode(true);
+				document.getElementById("myList").appendChild(the_clone);
+			}
+		</script>
+	</head>
+	<body>
+		<ul id="myList"><li>Good Morning</li><li>Hello</li></ul>
+		<p>
+			Click on the button to clone node.
+		</p>
+		<button onclick="myFunction1()" type="button" name="button">cloneNode()</button>
+		<button onclick="myFunction2()" type="button" name="button">cloneNode(true)</button>
+	</body>
+</html>
