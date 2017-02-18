@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>More on Functions1</title>
+		<script type="text/javascript">
+			//return a function from another function
+			function counter(){
+				var count = 0;
+				return function(){
+					count++;
+					alert(count);
+				}
+			}
+
+			var count = counter();
+			count();
+			count();
+			count();
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
