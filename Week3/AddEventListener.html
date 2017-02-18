@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Adding Events Using JavaScript</title>
+	</head>
+	<body>
+		<button id="btn0" onclick="alert('Hello')"type="button" name="button">Click Me!</button><br>
+		<button id="btn1" type="button" name="button">Remove Listener</button>
+		<script type="text/javascript">
+			function do_something(){
+				alert("Clicked");
+			}
+			var btn0 = document.getElementById("btn0");
+			btn0.addEventListener("click",do_something);
+
+			var btn1 = document.getElementById("btn1");
+			btn1.addEventListener("click",function(){
+				btn0.removeEventListener("click",do_something);
+			});
+		</script>
+	</body>
+</html>
