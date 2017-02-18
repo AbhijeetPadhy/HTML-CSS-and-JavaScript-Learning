@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Timer Events!</title>
+		<script type="text/javascript">
+			function set_things(){
+				wait_duration = prompt("How long do want to sleep?");
+				setTimeout(show_wake_up_message,wait_duration);
+			}
+			function show_wake_up_message(){
+				alert("Wake Up!!!");
+			}
+		</script>
+	</head>
+	<body onload="set_things()">
+		<h1>Alarm clock example</h1>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Timer Events2</title>
+		<script type="text/javascript">
+			var the_timer, x_position = 0, the_image;
+			function set_timer(){
+				//alert("hello!!");
+				the_image = document.getElementById("cat");
+				x_position = x_position+1;
+				the_image.style.left = x_position+"px";
+				console.log(the_image.style.left +" "+x_position);
+				the_timer = setTimeout(set_timer,50);
+			}
+		</script>
+	</head>
+	<body onload="set_timer()">
+		<img src="123.jpg" id="cat" alt="" style="position:absolute; left:0px;"/>
+		<button onclick="clearTimeout(the_timer)" type="button" name="button">Stop!</button>
+	</body>
+</html>
